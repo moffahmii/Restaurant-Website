@@ -1,0 +1,239 @@
+/* ---------- extra Large Screens (Desktops) ---------- */
+
+@media all and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* ---------- Large Screens (Desktops) ---------- */
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .home-caption {
+        top: 120px;
+        font-size: 90%;
+    }
+
+    .home-pic {
+        top: 120px;
+    }
+    
+}
+/* ---------- Medium Screens (Tablets) ---------- */
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .nav-bar .container {
+        gap: 15px;
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #Home-section {
+        padding-bottom: 100px;
+        height: auto;
+    }
+
+    .home-section .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .home-caption {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-caption h1 {
+        font-size: 28px;
+    }
+
+    .home-pic {
+        width: 60%;
+    }
+
+    .chefs .container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .chef-item {
+        width: 40%;
+    }
+
+    #gallery .gallery-container {
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+        flex-wrap: nowrap;
+    }
+
+    #gallery .gallery-item {
+        width: 30%;
+    }
+
+    .row1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .details-item {
+        width: 100%;
+    }
+
+    #gallery .gallery-item {
+        width: 100%;
+    }
+
+    .sunscription-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sunscription-group input,
+    .sunscription-group .butsub {
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about,
+    .subscription-box,
+    .contact-details {
+        width: 100%;
+    }
+
+}
+
+/* ---------- Small Screens (Mobiles) ---------- */
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .nav-bar .container {
+        padding: 15px 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--bg-color);
+        flex-direction: column;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .nav-links.show {
+        height: 220px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #Home-section {
+        flex-direction: column;
+        padding-top: 50px;
+        text-align: center;
+        gap: 50px;
+        padding-bottom: 70px;
+    }
+
+    #Home-section img {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    #Home-section .home-text {
+        padding-top: 20px;
+    }
+
+    .home-caption {
+        width: 90%;
+        font-size: 24px;
+        top: 60px;
+    }
+
+    .chefs .container {
+        flex-direction: column;
+    }
+
+    .chef-item {
+        width: 100%;
+    }
+
+}
+
+/* ---------- Extra Small Screens (Phones) ---------- */
+@media (max-width: 480px) {
+    .home-caption h1 {
+        font-size: 20px;
+    }
+    .home-pic{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .home-caption p {
+        font-size: 14px;
+    }
+
+    .btn-red,
+    .butform {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .watch {
+        font-size: 14px;
+    }
+
+    .chefitem-content h1 {
+        font-size: 18px;
+    }
+
+    .chefitem-content h5 {
+        font-size: 14px;
+    }
+
+    .showcase h2 {
+        font-size: 24px;
+    }
+
+    .showcase p {
+        font-size: 14px;
+    }
+}
